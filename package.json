@@ -1,0 +1,27 @@
+{
+  "name": "relax_test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Thrashero1/relax_test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Thrashero1/relax_test/issues"
+  },
+  "homepage": "https://github.com/Thrashero1/relax_test#readme",
+  "devDependencies": {
+    "cypress": "^12.8.1",
+    "newman": "^5.3.2"
+  },
+  "dependencies": {
+    "cypress-mochawesome-reporter": "^3.3.0"
+  }
+}
