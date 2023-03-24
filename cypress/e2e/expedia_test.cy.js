@@ -11,14 +11,14 @@ describe('', () => {
     before(() => {
         cy.visit('https://www.expedia.com/')
         cy.get('body').click({force:true})
-        
         cy.closePopUp()
     })
 
-    it('gotes to the multicity page', () => {
+    it('goes to the multicity page', () => {
         cy.contains('Flights').click({force: true})
         cy.contains('Multi-city').should('be.visible').click()
-        cy.get('[data-stid="location-field-leg1-origin-menu-trigger"]', {timeout: 10000}).click()
+        cy.get('body').click({force: true})
+        cy.get('[data-stid="location-field-leg1-origin-menu-trigger"]', {timeout: 10000}).click({ force:true })
         cy.get('#location-field-leg1-origin').type('lon')
         .get('[aria-label="London (LHR - Heathrow) United Kingdom"]').click()
         cy.get('[data-stid="location-field-leg1-destination-menu-trigger"]').click()
