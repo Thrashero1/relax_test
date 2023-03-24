@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cy:open": "npx cypress open",
+    "cy:run": "npx cypress run",
+    "postman": "npx newman run Postman/Relax_test.json",
+    "postman_report": "npx newman run Postman/Relax_test.json -r htmlextra --reporter-htmlextra-export ./postman/"
   },
   "repository": {
     "type": "git",
@@ -22,6 +25,7 @@
     "newman": "^5.3.2"
   },
   "dependencies": {
+    "newman-reporter-htmlextra": "^1.22.11",
     "cypress-mochawesome-reporter": "^3.3.0"
   }
 }
